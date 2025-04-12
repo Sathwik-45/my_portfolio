@@ -8,7 +8,11 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
-
+.navbar-dark .navbar-nav .nav-link.nav-hover:hover {
+  color: #0dcaf0 !important; /* Light blue shade */
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
 /* Header */
 header {
   background-color: #2C3E50;
@@ -62,4 +66,5 @@ nav {
   .nav-links li {
     margin: 10px 0;
   }
+
 }
