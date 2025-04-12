@@ -11,7 +11,7 @@ import portfolioImg from "../assets/images/portfolio.png";
 function Projects() {
   const projects = [
     {
-      title: "Decision Tree Based Tourist Recommendation System",
+      title: "Decision Trees Based Tourist Recommendation System",
       description: "A system that recommends tourist destinations based on user preferences using decision tree algorithms.",
       icon: faLaptopCode,
       image: tourbotImg,
