@@ -33,7 +33,7 @@ const Contact = () => {
               <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="mx-2">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
-              <a href="tel:+1234567890" className="mx-2">
+              <a href="tel:6281792950" className="mx-2">
                 <FontAwesomeIcon icon={faPhoneAlt} size="2x" />
               </a>
             </div>

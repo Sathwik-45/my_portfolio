@@ -1,12 +1,14 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode, faMobileAlt, faCloud } from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode, faMobileAlt, faCloud, faTasks, faTrademark, faShop, faBasketShopping } from "@fortawesome/free-solid-svg-icons";
 
 // Import project images
 import tourbotImg from "../assets/images/tourbot.png";
 import movieImg from "../assets/images/mrs.png";
 import portfolioImg from "../assets/images/portfolio.png";
+import TaskImg from "../assets/images/Task.png";
+import dmaImg from "../assets/images/dma.png";
 
 function Projects() {
   const projects = [
@@ -30,6 +32,22 @@ function Projects() {
       icon: faCloud,
       image: portfolioImg,
       githubLink: "https://github.com/sathwik-45/my_portfolio",
+    },
+     {
+      title: "TASKMANAGER",
+      description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
+      icon: faTasks,
+      image: TaskImg,
+      githubLink: "https://github.com/sathwik-45/taskmanagar",
+      projectlink:"https://taskmanager-orpin-kappa.vercel.app/"
+    },
+     {
+      title: "DIGITAL MARKETING AGENCY",
+      description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
+      icon: faBasketShopping,
+      image: dmaImg,
+      githubLink: "https://github.com/sathwik-45/dma",
+      projectlink:"https://dma-bay.vercel.app/"
     },
   ];
 
@@ -56,6 +74,9 @@ function Projects() {
                 <Card.Text>{project.description}</Card.Text>
                 <Button variant="primary" href={project.githubLink} target="_blank">
                   View Project
+                </Button><br /><br />
+                 <Button variant="primary" href={project.projectlink} target="_blank">
+                  See Project
                 </Button>
               </Card.Body>
             </Card>
