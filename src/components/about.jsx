@@ -1,28 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSchool, faGraduationCap, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import myPhoto from "../assets/images/my-photo.png";
 
 function About() {
+  const [flipping, setFlipping] = useState(false);
+
+  const handleFlip = () => {
+    if (flipping) return;
+    setFlipping(true);
+    setTimeout(() => setFlipping(false), 1000);
+  };
+
   return (
     <Container className="py-5">
       <Row className="align-items-center">
-        {/* Image first on small screens, second on medium and above */}
+        {/* Image column */}
         <Col xs={12} md={6} className="text-center order-1 order-md-2 mb-4 mb-md-0">
-          <img
-            src={myPhoto}
-            alt="My Photo"
-            className="img-fluid rounded-circle animate__animated animate__fadeIn"
-            style={{ maxWidth: "250px", height: "auto" }} // Responsive smaller size
-          />
+          <div className="about-photo-wrapper">
+            <img
+              src={myPhoto}
+              alt="My Photo"
+              onMouseEnter={handleFlip}
+              className={`img-fluid rounded-circle about-photo ${flipping ? "flip" : ""}`}
+              style={{ maxWidth: "250px", height: "auto" }}
+            />
+          </div>
         </Col>
 
-        {/* Text content */}
+        {/* Text column */}
         <Col xs={12} md={6} className="order-2 order-md-1">
           <h2 className="animate__animated animate__fadeIn">About Me</h2>
           <p className="animate__animated animate__fadeIn">
-            Hello! I'm Sathwik, a passionate web developer with experience in React, JavaScript, HTML, CSS, and more. I love building web applications that are both functional and user-friendly. I am continuously learning new technologies to stay ahead in the ever-changing world of web development.
+            Hello! I'm Sathwik, a passionate web developer with experience in React, JavaScript, HTML, CSS, and more.
+            I love building web applications that are both functional and user-friendly.
+            I am continuously learning new technologies to stay ahead in the ever-changing world of web development.
+            I am good at Java and Python programming.
           </p>
 
           <h3 className="mt-4 animate__animated animate__fadeIn">Education</h3>

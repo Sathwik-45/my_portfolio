@@ -30,7 +30,7 @@ const Contact = () => {
               <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener noreferrer" className="mx-2">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
-              <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="mx-2">
+              <a href="https://github.com/sathwik-45" target="_blank" rel="noopener noreferrer" className="mx-2">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
               <a href="tel:6281792950" className="mx-2">
