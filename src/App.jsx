@@ -3,6 +3,7 @@ import Header from "./components/header";
 import About from "./components/about";
 import Projects from "./components/project";
 import Skills from "./components/skills";
+import Certifications from "./components/certifications";
 import Contact from "./components/contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css";
@@ -20,6 +21,9 @@ function App() {
         </section>
         <section id="skills">
           <Skills />
+        </section>
+        <section id="certifications">
+          <Certifications /> {/* ✅ Corrected */}
         </section>
         <section id="contact">
           <Contact />

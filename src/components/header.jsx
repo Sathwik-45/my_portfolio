@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faBriefcase, faTools, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faBriefcase, faTools, faPhoneAlt, faDownload, faNoteSticky } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   const [expanded, setExpanded] = useState(false);
@@ -50,6 +50,16 @@ function Header() {
             <Nav.Link onClick={() => handleNavClick("contact")} className="nav-hover">
               <FontAwesomeIcon icon={faPhoneAlt} className="me-2" /> Contact
             </Nav.Link>
+          </Nav.Item>
+            <Nav.Item>
+            <Nav.Link onClick={() => handleNavClick("certifications")} className="nav-hover">
+              <FontAwesomeIcon icon={faNoteSticky} className="me-2" /> Certifications
+            </Nav.Link>
+          </Nav.Item>
+            <Nav.Item>
+            <Nav.Link as="a" href="/resume.pdf" download className="nav-hover">
+  <FontAwesomeIcon icon={faDownload} className="me-2" />RESUME
+</Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
