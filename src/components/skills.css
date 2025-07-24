@@ -1,0 +1,62 @@
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.marquee-context:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  border-radius: 40%;
+  animation: scroll-left 20s linear infinite;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.skill-box {
+  background: #fff;
+  padding: 16px 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+  min-width: 120px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
