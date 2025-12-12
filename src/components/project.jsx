@@ -32,7 +32,7 @@ function Projects() {
       description: "A system that manages the work of taxpayers and taxagents.",
       icon: faLaptopCode,
       image: taxbidsImg,
-      githubLink: "https://github.com/sathwik-45/tourbot",
+      githubLink: "https://github.com/sathwik-45/taxbids",
       projectlink:"https://taxbids-admin-frontend.vercel.app/"
     },
     {
