@@ -28,6 +28,22 @@ function Projects() {
       githubLink: "https://github.com/Sathwik-45/movierecomendationapp",
     },
     {
+      title: "TaxBids admin dashborad",
+      description: "A system that manages the work of taxpayers and taxagents.",
+      icon: faLaptopCode,
+      image: taxbidsImg,
+      githubLink: "https://github.com/sathwik-45/tourbot",
+      projectlink:"https://taxbids-admin-frontend.vercel.app/"
+    },
+    {
+      title: "human resource management system",
+      description: "A system that manages the employe and make tasks easy to hr.",
+      icon: faLaptopCode,
+      image: hrmsImg,
+      githubLink: "https://github.com/sathwik-45/hrms",
+      projectlink:"https://hrms-rust.vercel.app/"
+    },
+    {
       title: "My Portfolio",
       description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
       icon: faCloud,
@@ -50,22 +66,7 @@ function Projects() {
       githubLink: "https://github.com/sathwik-45/dma",
       projectlink:"https://dma-bay.vercel.app/"
     },
-    {
-      title: "TaxBids admin dashborad",
-      description: "A system that manages the work of taxpayers and taxagents.",
-      icon: faLaptopCode,
-      image: tourbotImg,
-      githubLink: "https://github.com/sathwik-45/tourbot",
-      projectlink:"https://taxbis-admin-frontend.vercel.app/"
-    },
-    {
-      title: "human resource management system",
-      description: "A system that manages the employe and make tasks easy to hr.",
-      icon: faLaptopCode,
-      image: hrmsImg,
-      githubLink: "https://github.com/sathwik-45/hrms",
-      projectlink:"https://hrms-rust.vercel.app/"
-    },
+    
   ];
 
   return (

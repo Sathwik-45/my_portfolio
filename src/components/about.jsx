@@ -42,23 +42,24 @@ function About() {
           <h3 className="mt-4 animate__animated animate__fadeIn">Education</h3>
           <ListGroup className="animate__animated animate__fadeIn">
             <ListGroup.Item>
-              <FontAwesomeIcon icon={faSchool} className="me-2" />
-              <strong>Cambridge School</strong> - Srungavarapukota
+              <FontAwesomeIcon icon={faLaptopCode} className="me-2" />
+              <strong>JNTU GV University</strong>
               <br />
-              <small>Passed in 2020 with 10/10 points</small>
+              <small>Currently pursuing B.Tech in Computer Science and Engineering (Passing out in 2026)</small>
             </ListGroup.Item>
-            <ListGroup.Item>
+                   <ListGroup.Item>
               <FontAwesomeIcon icon={faGraduationCap} className="me-2" />
               <strong>Govt Polytechnic Anakapalli</strong>
               <br />
               <small>Diploma in Computer Engineering (2023) - 87%</small>
             </ListGroup.Item>
             <ListGroup.Item>
-              <FontAwesomeIcon icon={faLaptopCode} className="me-2" />
-              <strong>JNTU GV University</strong>
+              <FontAwesomeIcon icon={faSchool} className="me-2" />
+              <strong>Cambridge School</strong> - Srungavarapukota
               <br />
-              <small>Currently pursuing B.Tech in Computer Science and Engineering (Passing out in 2026)</small>
+              <small>Passed in 2020 with 10/10 points</small>
             </ListGroup.Item>
+  
           </ListGroup>
         </Col>
       </Row>
