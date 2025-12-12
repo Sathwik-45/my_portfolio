@@ -33,10 +33,13 @@ function About() {
         <Col xs={12} md={6} className="order-2 order-md-1">
           <h2 className="animate__animated animate__fadeIn">About Me</h2>
           <p className="animate__animated animate__fadeIn">
-            Hello! I'm Sathwik, a passionate web developer with experience in React, JavaScript, HTML, CSS, and more.
-            I love building web applications that are both functional and user-friendly.
-            I am continuously learning new technologies to stay ahead in the ever-changing world of web development.
-            I am good at Java and Python programming.
+          Hello! I'm Sathwik — a Full Stack Developer skilled in MERN Stack, PostgreSQL, and modern web technologies.
+I enjoy building scalable, responsive, and user-friendly applications with clean UI and strong backend logic.
+
+I work with React, Node.js, Express, MongoDB, PostgreSQL, Supabase, and modern tools like Tailwind CSS.
+I’m also strong in Java and Python, which helps me write efficient logic and solve problems effectively.
+
+I continuously learn, explore new technologies, and improve both frontend and backend skills to become a better engineer every day.
           </p>
 
           <h3 className="mt-4 animate__animated animate__fadeIn">Education</h3>
