@@ -10,7 +10,8 @@ const certificateImages = [
   { src: "/certificates/tresurer.jpg", title: "College Fest Treasurer" },
   { src: "/certificates/leetcode.png", title: "100 Days Completion" },
     { src: "/certificates/nxt24.jpg", title: "Intern as Reactjs Devloper in Next24techSolutions" },
-  { src: "/certificates/Apex.png", title: "Intern as Web devlopment in Apex" }
+  { src: "/certificates/Apex.png", title: "Intern as Web devlopment in Apex" },
+   { src: "/certificates/uptoskills.png", title: "Intern as Mern stack devloper in uptoskills" }
 ];
 
 function Certifications() {
