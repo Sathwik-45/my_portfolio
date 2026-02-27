@@ -11,6 +11,7 @@ import TaskImg from "../assets/images/Task.png";
 import dmaImg from "../assets/images/dma.png";
 import hrmsImg from "../assets/images/hrms.png";
 import taxbidsImg from "../assets/images/taxbids.png";
+import puredropimg from "../assets/images/puredrop.png";
 function Projects() {
   const projects = [
     {
@@ -59,14 +60,13 @@ function Projects() {
       projectlink:"https://taskmanager-orpin-kappa.vercel.app/"
     },
      {
-      title: "DIGITAL MARKETING AGENCY",
+      title: "PUREDROP",
       description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
       icon: faBasketShopping,
-      image: dmaImg,
-      githubLink: "https://github.com/sathwik-45/dma",
-      projectlink:"https://dma-bay.vercel.app/"
-    },
-    
+      image: puredropimg,
+      githubLink: "https://github.com/sathwik-45/puredrop",
+      projectlink:"https://aqua-umber.vercel.app/"
+    }
   ];
 
   return (
