@@ -65,7 +65,7 @@ function Projects() {
       icon: faBasketShopping,
       image: puredropimg,
       githubLink: "https://github.com/sathwik-45/puredrop",
-      projectlink:"https://aqua-umber.vercel.app/"
+      projectlink:"https://puredrop-delivery.vercel.app/"
     }
   ];
 
