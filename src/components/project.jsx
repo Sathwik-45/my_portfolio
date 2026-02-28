@@ -34,7 +34,7 @@ function Projects() {
       icon: faLaptopCode,
       image: taxbidsImg,
       githubLink: "https://github.com/sathwik-45/taxbids",
-      projectlink:"https://taxbids-admin-frontend.vercel.app/"
+      projectlink: "https://taxbids-admin-frontend.vercel.app/"
     },
     {
       title: "human resource management system",
@@ -42,7 +42,15 @@ function Projects() {
       icon: faLaptopCode,
       image: hrmsImg,
       githubLink: "https://github.com/sathwik-45/hrms",
-      projectlink:"https://hrms-rust.vercel.app/"
+      projectlink: "https://hrms-rust.vercel.app/"
+    },
+    {
+      title: "digital marketing agency",
+      description: "A system that manages the websites make seo ranking marketing.",
+      icon: faLaptopCode,
+      image: hrmsImg,
+      githubLink: "https://github.com/sathwik-45/dma",
+      projectlink: "https://dma-bay.vercel.app/"
     },
     {
       title: "My Portfolio",
@@ -51,21 +59,21 @@ function Projects() {
       image: portfolioImg,
       githubLink: "https://github.com/sathwik-45/my_portfolio",
     },
-     {
+    {
       title: "TASKMANAGER",
       description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
       icon: faTasks,
       image: TaskImg,
       githubLink: "https://github.com/sathwik-45/taskmanagar",
-      projectlink:"https://taskmanager-orpin-kappa.vercel.app/"
+      projectlink: "https://taskmanager-orpin-kappa.vercel.app/"
     },
-     {
+    {
       title: "PUREDROP",
       description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
       icon: faBasketShopping,
       image: puredropimg,
       githubLink: "https://github.com/sathwik-45/puredrop",
-      projectlink:"https://puredrop-delivery.vercel.app/"
+      projectlink: "https://puredrop-delivery.vercel.app/"
     }
   ];
 
@@ -93,7 +101,7 @@ function Projects() {
                 <Button variant="primary" href={project.githubLink} target="_blank">
                   View Project
                 </Button><br /><br />
-                 <Button variant="primary" href={project.projectlink} target="_blank">
+                <Button variant="primary" href={project.projectlink} target="_blank">
                   See Project
                 </Button>
               </Card.Body>
