@@ -48,7 +48,7 @@ function Projects() {
       title: "digital marketing agency",
       description: "A system that manages the websites make seo ranking marketing.",
       icon: faLaptopCode,
-      image: hrmsImg,
+      image: dmaImg,
       githubLink: "https://github.com/sathwik-45/dma",
       projectlink: "https://dma-bay.vercel.app/"
     },
@@ -65,7 +65,7 @@ function Projects() {
       icon: faTasks,
       image: TaskImg,
       githubLink: "https://github.com/sathwik-45/taskmanagar",
-      projectlink: "https://taskmanager-orpin-kappa.vercel.app/"
+      projectlink: "https://taskmanager.vercel.app/"
     },
     {
       title: "PUREDROP",
