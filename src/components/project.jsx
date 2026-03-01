@@ -12,6 +12,7 @@ import dmaImg from "../assets/images/dma.png";
 import hrmsImg from "../assets/images/hrms.png";
 import taxbidsImg from "../assets/images/taxbids.png";
 import puredropimg from "../assets/images/puredrop.png";
+import puredropowner from "../assets/images/puredropowner.png"
 function Projects() {
   const projects = [
     {
@@ -52,28 +53,30 @@ function Projects() {
       githubLink: "https://github.com/sathwik-45/dma",
       projectlink: "https://dma-bay.vercel.app/"
     },
-    {
-      title: "My Portfolio",
-      description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
-      icon: faCloud,
-      image: portfolioImg,
-      githubLink: "https://github.com/sathwik-45/my_portfolio",
-    },
+
     {
       title: "TASKMANAGER",
       description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
       icon: faTasks,
       image: TaskImg,
       githubLink: "https://github.com/sathwik-45/taskmanagar",
-      projectlink: "https://taskmanager.vercel.app/"
+      projectlink: "https://managemytask.vercel.app/"
     },
     {
       title: "PUREDROP",
-      description: "This portfolio showcases my work, skills, and projects, built using React, Bootstrap, and other modern web technologies.",
+      description: "This is water delivery platform which acts as meditor between water plant ownwers and service gainers act as traveler",
       icon: faBasketShopping,
       image: puredropimg,
       githubLink: "https://github.com/sathwik-45/puredrop",
       projectlink: "https://puredrop-delivery.vercel.app/"
+    }
+    {
+      title: "PUREDROP-OWNER",
+      description: "small where water plant owner can accept and manage and maintain the orders.",
+      icon: faBasketShopping,
+      image: puredropimg,
+      githubLink: "https://github.com/sathwik-45/AquaOwner",
+      projectlink: "https://aqua-owner.vercel.app/"
     }
   ];
 
