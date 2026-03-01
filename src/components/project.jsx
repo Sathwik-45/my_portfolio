@@ -69,7 +69,7 @@ function Projects() {
       image: puredropimg,
       githubLink: "https://github.com/sathwik-45/puredrop",
       projectlink: "https://puredrop-delivery.vercel.app/"
-    }
+    },
     {
       title: "PUREDROP-OWNER",
       description: "small where water plant owner can accept and manage and maintain the orders.",
