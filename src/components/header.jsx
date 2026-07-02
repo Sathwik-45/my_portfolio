@@ -17,9 +17,8 @@ function Header() {
   return (
     <Navbar
       expand="lg"
-      bg="dark"
       variant="dark"
-      className="animate__animated animate__fadeIn"
+      className="navbar-custom navbar-dark"
       expanded={expanded}
       fixed="top"
     >
