@@ -125,7 +125,7 @@ function Projects() {
       icon: faBrain,
       image: pdmsimg,
       tech: ["Python", "Scikit-Learn", "LSTM/RNN", "Pandas", "Flask"],
-      githubLink: "https://github.com/sathwik-45/predictive_decision_making_system",
+      githubLink: "https://github.com/Sathwik-45/pdms",
       projectlink: ""
     },
     {
@@ -135,7 +135,7 @@ function Projects() {
       icon: faBrain,
       image: ticketimg,
       tech: ["Ollama", "Prompt engineering", "Python", "Transformers", "NLP"],
-      githubLink: "https://github.com/sathwik-45",
+      githubLink: "https://github.com/Sathwik-45/ticket_priority",
       projectlink: ""
     },
     {
