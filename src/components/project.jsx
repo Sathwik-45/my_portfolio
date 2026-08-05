@@ -22,7 +22,8 @@ import hrmsImg from "../assets/images/hrms.png";
 import taxbidsImg from "../assets/images/taxbids.png";
 import puredropimg from "../assets/images/puredrop.png";
 import puredropowner from "../assets/images/puredropowner.png";
-
+import ticketimg from "../assets/images/ticket.png";
+import pdmsimg from "../assets/images/pdms.png";
 function Projects() {
   const [filter, setFilter] = useState("all");
 
@@ -122,7 +123,7 @@ function Projects() {
       description: "Final Year Project: An enterprise ML suite providing sales prediction, anomaly detection, inventory demand forecasting, and customer churn prediction using regression, forecasting, and classification models.",
       category: "ml",
       icon: faBrain,
-      image: null,
+      image: pdmsimg,
       tech: ["Python", "Scikit-Learn", "LSTM/RNN", "Pandas", "Flask"],
       githubLink: "https://github.com/sathwik-45/predictive_decision_making_system",
       projectlink: ""
@@ -132,8 +133,8 @@ function Projects() {
       description: "Wipro Internship Project: An automated IT ticket system utilizing local LLMs via Ollama and fine-tuned BERT transformers to analyze, classify, and prioritize incoming support tickets.",
       category: "ml",
       icon: faBrain,
-      image: null,
-      tech: ["Ollama", "BERT", "Python", "Transformers", "NLP"],
+      image: ticketimg,
+      tech: ["Ollama", "Prompt engineering", "Python", "Transformers", "NLP"],
       githubLink: "https://github.com/sathwik-45",
       projectlink: ""
     },
