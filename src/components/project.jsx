@@ -108,6 +108,26 @@ function Projects() {
       githubLink: "https://github.com/Sathwik-45/ticket_priority",
       projectlink: "https://smart-ticket-priority.vercel.app/"
     },
+     {
+      title: "Predictive Decision Making System",
+      description: "Final Year Project: An enterprise ML suite providing sales prediction, anomaly detection, inventory demand forecasting, and customer churn prediction using regression, forecasting, and classification models.",
+      category: "ml",
+      icon: faBrain,
+      image: pdmsimg,
+      tech: ["Python", "Scikit-Learn", "LSTM/RNN", "Pandas", "Flask"],
+      githubLink: "https://github.com/sathwik-45/pdms",
+      projectlink: ""
+    },
+    {
+      title: "AI-Powered Ticket Prioritisation",
+      description: "Wipro Internship Project: An automated IT ticket system utilizing local LLMs via Ollama and fine-tuned BERT transformers to analyze, classify, and prioritize incoming support tickets.",
+      category: "ml",
+      icon: faBrain,
+      image: ticketimg,
+      tech: ["Ollama", "Prompt engineering", "Python", "Transformers", "NLP"],
+      githubLink: "https://github.com/sathwik-45/ticket_priority",
+      projectlink: "https://smart-ticket-priority.vercel.app"
+    },
     {
       title: "Tourist Advisory TourBot",
       description: "An intelligent travel advisory bot implementing decision tree classifier models to recommend spots based on user profiles.",
