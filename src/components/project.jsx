@@ -58,6 +58,7 @@ function Projects() {
       githubLink: "https://github.com/sathwik-45/taxbids",
       projectlink: "https://taxbids-admin-frontend.vercel.app/"
     },
+    
     {
       title: "FinTrack Wallet Backend",
       description: "A dockerized financial backend supporting transaction histories, budget caps, and secure user profiles.",
@@ -78,6 +79,17 @@ function Projects() {
       githubLink: "https://github.com/sathwik-45/Devconnect",
       projectlink: ""
     },
+    {
+      title: "Predictive Decision Making System",
+      description: "Final Year Project: An enterprise ML suite providing sales prediction, anomaly detection, inventory demand forecasting, and customer churn prediction using regression, forecasting, and classification models.",
+      category: "ml",
+      icon: faBrain,
+      image: pdmsimg,
+      tech: ["Python", "Scikit-Learn", "LSTM/RNN", "Pandas", "Flask"],
+      githubLink: "https://github.com/Sathwik-45/pdms",
+      projectlink: ""
+    },
+   
     {
       title: "AI-Powered Ticket Prioritisation",
       description: "Wipro Internship Project: An automated IT ticket system utilizing local LLMs via Ollama and fine-tuned BERT transformers to analyze, classify, and prioritize incoming support tickets.",
@@ -108,6 +120,27 @@ function Projects() {
       githubLink: "https://github.com/Sathwik-45/movierecomendationapp",
       projectlink: ""
     },
+    {
+      title: "Calories Predictor",
+      description: "An ML model predicting calorie burn using physiological parameters, activity duration, and regression algorithms.",
+      category: "ml",
+      icon: faBrain,
+      image: null,
+      tech: ["Python", "XGBoost", "Scikit-Learn", "Pandas", "Numpy"],
+      githubLink: "https://github.com/sathwik-45",
+      projectlink: ""
+    },
+    {
+      title: "Human Resource System",
+      description: "A digital workplace desk application enabling CRUD operations, department filters, and task distributions.",
+      category: "mern",
+      icon: faTasks,
+      image: hrmsImg,
+      tech: ["React", "Express", "Node.js", "MongoDB", "Material UI"],
+      githubLink: "https://github.com/sathwik-45/hrms",
+      projectlink: "https://hrms-rust.vercel.app/"
+    },
+
     {
       title: "TaskManager App",
       description: "An agile-based workspace visualizer for managing backlogs, sprint tasks, and progress reports.",
