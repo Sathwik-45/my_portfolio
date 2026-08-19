@@ -59,16 +59,6 @@ function Projects() {
       projectlink: "https://taxbids-admin-frontend.vercel.app/"
     },
     {
-      title: "SmartHire HR Tool",
-      description: "A full-stack recruitment portal featuring automated candidate screening, interviewer logs, and job status boards.",
-      category: "java",
-      icon: faServer,
-      image: null,
-      tech: ["Spring Boot", "React", "PostgreSQL", "REST API", "Tailwind CSS"],
-      githubLink: "https://github.com/sathwik-45/Smarthire",
-      projectlink: ""
-    },
-    {
       title: "FinTrack Wallet Backend",
       description: "A dockerized financial backend supporting transaction histories, budget caps, and secure user profiles.",
       category: "java",
@@ -86,36 +76,6 @@ function Projects() {
       image: null,
       tech: ["Spring Boot", "MySQL", "Maven", "Spring Security"],
       githubLink: "https://github.com/sathwik-45/Devconnect",
-      projectlink: ""
-    },
-    {
-      title: "Predictive Decision Making System",
-      description: "Final Year Project: An enterprise ML suite providing sales prediction, anomaly detection, inventory demand forecasting, and customer churn prediction using regression, forecasting, and classification models.",
-      category: "ml",
-      icon: faBrain,
-      image: pdmsimg,
-      tech: ["Python", "Scikit-Learn", "LSTM/RNN", "Pandas", "Flask"],
-      githubLink: "https://github.com/Sathwik-45/pdms",
-      projectlink: ""
-    },
-    {
-      title: "AI-Powered Ticket Prioritisation",
-      description: "Wipro Internship Project: An automated IT ticket system utilizing local LLMs via Ollama and fine-tuned BERT transformers to analyze, classify, and prioritize incoming support tickets.",
-      category: "ml",
-      icon: faBrain,
-      image: ticketimg,
-      tech: ["Ollama", "Prompt engineering", "Python", "Transformers", "NLP"],
-      githubLink: "https://github.com/Sathwik-45/ticket_priority",
-      projectlink: "https://smart-ticket-priority.vercel.app/"
-    },
-     {
-      title: "Predictive Decision Making System",
-      description: "Final Year Project: An enterprise ML suite providing sales prediction, anomaly detection, inventory demand forecasting, and customer churn prediction using regression, forecasting, and classification models.",
-      category: "ml",
-      icon: faBrain,
-      image: pdmsimg,
-      tech: ["Python", "Scikit-Learn", "LSTM/RNN", "Pandas", "Flask"],
-      githubLink: "https://github.com/sathwik-45/pdms",
       projectlink: ""
     },
     {
@@ -147,36 +107,6 @@ function Projects() {
       tech: ["Python", "Machine Learning", "TfidfVectorizer", "Streamlit"],
       githubLink: "https://github.com/Sathwik-45/movierecomendationapp",
       projectlink: ""
-    },
-    {
-      title: "Calories Predictor",
-      description: "An ML model predicting calorie burn using physiological parameters, activity duration, and regression algorithms.",
-      category: "ml",
-      icon: faBrain,
-      image: null,
-      tech: ["Python", "XGBoost", "Scikit-Learn", "Pandas", "Numpy"],
-      githubLink: "https://github.com/sathwik-45",
-      projectlink: ""
-    },
-    {
-      title: "Human Resource System",
-      description: "A digital workplace desk application enabling CRUD operations, department filters, and task distributions.",
-      category: "mern",
-      icon: faTasks,
-      image: hrmsImg,
-      tech: ["React", "Express", "Node.js", "MongoDB", "Material UI"],
-      githubLink: "https://github.com/sathwik-45/hrms",
-      projectlink: "https://hrms-rust.vercel.app/"
-    },
-    {
-      title: "Digital Marketing Agency",
-      description: "A customer-facing agency site showcasing service options, SEO strategies, and responsive contact flows.",
-      category: "mern",
-      icon: faLaptopCode,
-      image: dmaImg,
-      tech: ["React", "Node.js", "Bootstrap", "Vercel Analytics"],
-      githubLink: "https://github.com/sathwik-45/dma",
-      projectlink: "https://dma-bay.vercel.app/"
     },
     {
       title: "TaskManager App",

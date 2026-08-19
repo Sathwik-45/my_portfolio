@@ -67,7 +67,7 @@ function About() {
           </h3>
           
           <p className="lead text-muted mb-4" style={{ fontSize: "1.05rem", lineHeight: "1.7" }}>
-            I am a passionate Full Stack Developer specializing in the **MERN Stack** (MongoDB, Express, React, Node.js), robust **Java Spring Boot** backend development, and building hands-on **Machine Learning** projects. 
+            I am a passionate Full Stack Developer specializing in the MERN Stack(MongoDB, Express, React, Node.js), robust Java Spring Boot backend development, and building hands-on Machine Learning projects. 
             I thrive on crafting high-performance, visually immersive web applications that bridge elegant user interfaces with strong database architectures.
           </p>
 
