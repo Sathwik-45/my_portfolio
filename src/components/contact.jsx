@@ -3,7 +3,7 @@ import { Container, Row, Col, Form } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCode, faEnvelope, faPhoneAlt, faMapMarkerAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import myPhoto from '../assets/images/my-photo2.jpg';
+import myPhoto from "../assets/images/my-photo-mobile.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -68,7 +68,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <span className="text-muted small d-block">Email Address</span>
-                      <a href="mailto:sathwikpentakoti45@gmail.com" className="text-white text-decoration-none fw-bold">sathwikpentakoti45@gmail.com</a>
+                      <a href="mailto:sathwikpentakoti@gmail.com" className="text-white text-decoration-none fw-bold">sathwikpentakoti45@gmail.com</a>
                     </div>
                   </div>
 
@@ -78,7 +78,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <span className="text-muted small d-block">Current Location</span>
-                      <span className="text-white fw-bold">Visakhapatnam, Andhra Pradesh, India</span>
+                      <span className="text-white fw-bold">Madhapur,Hyderabad,Telengana</span>
                     </div>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ const Contact = () => {
           <Col lg={7} data-aos="fade-left" data-aos-duration="1000">
             <div className="glass-card h-100">
               <h3 className="text-white fw-bold mb-4">Send a Message</h3>
-              
+
               {submitted ? (
                 <div className="h-75 d-flex flex-column align-items-center justify-content-center text-center">
                   <div className="social-icon-btn mb-3" style={{ width: "60px", height: "60px", background: "var(--accent-mern)", color: "white" }}>
