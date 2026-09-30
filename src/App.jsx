@@ -44,7 +44,7 @@ function App() {
         {/* Scroll progress indicator */}
         <ScrollProgress />
 
-          <div style={{ paddingTop: "70px" }}>
+          <div style={{ paddingTop: "50px" }}>
             <section id="about" className="scroll-reveal">
               <About />
             </section>

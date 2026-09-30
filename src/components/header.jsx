@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -32,6 +32,7 @@ function Header({ onNavClick }) {
       expanded={expanded}
       fixed="top"
     >
+      <Container fluid="lg">
       <Navbar.Brand
         className="ps-4 ps-lg-5 brand-name d-flex align-items-center"
         href="#"
@@ -102,6 +103,7 @@ function Header({ onNavClick }) {
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }

@@ -57,7 +57,7 @@ function About() {
     <Container className="py-5">
       <Row className="align-items-center mb-5 pb-4">
         {/* Left Column: Bio and Greetings */}
-        <Col lg={7} className="order-2 order-lg-1 text-start" data-aos="fade-right" data-aos-duration="1000">
+        <Col lg={6} className="order-2 order-lg-1 text-start" data-aos="fade-right" data-aos-duration="1000">
           <span className="hero-subtitle">Welcome to my space</span>
           <h1 className="hero-title">
             Hi, I'm <span className="text-gradient">Sathwik Pentakoti</span>
@@ -83,13 +83,13 @@ function About() {
         </Col>
 
         {/* Right Column: Photo Frame */}
-        <Col lg={5} className="order-1 order-lg-2 text-center mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
+        <Col lg={6} className="order-1 order-lg-2 text-center mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
           <div className="about-photo-wrapper">
             <img
               src={myPhotoDesktop}
               alt="Sathwik Pentakoti Profile"
               className="about-photo d-none d-lg-block mx-auto"
-              style={{ width: "135%", maxWidth: "none", transform: "scale(1.2)" }}
+              style={{ width: "130%", marginLeft: "-15%", objectFit: "contain" }}
             />
             <img
               src={myPhotoMobile}
