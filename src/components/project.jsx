@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { 
-  faBrain, 
-  faLaptopCode, 
-  faDatabase, 
-  faTasks, 
-  faExternalLinkAlt, 
-  faCode, 
+import {
+  faBrain,
+  faLaptopCode,
+  faDatabase,
+  faTasks,
+  faExternalLinkAlt,
+  faCode,
   faGraduationCap,
   faServer
 } from "@fortawesome/free-solid-svg-icons";
@@ -58,7 +58,6 @@ function Projects() {
       githubLink: "https://github.com/sathwik-45/taxbids",
       projectlink: "https://taxbids-admin-frontend.vercel.app/"
     },
-    
     {
       title: "FinTrack Wallet Backend",
       description: "A dockerized financial backend supporting transaction histories, budget caps, and secure user profiles.",
@@ -89,7 +88,7 @@ function Projects() {
       githubLink: "https://github.com/Sathwik-45/pdms",
       projectlink: ""
     },
-   
+
     {
       title: "AI-Powered Ticket Prioritisation",
       description: "Wipro Internship Project: An automated IT ticket system utilizing local LLMs via Ollama and fine-tuned BERT transformers to analyze, classify, and prioritize incoming support tickets.",
@@ -160,8 +159,8 @@ function Projects() {
     { label: "Machine Learning", value: "ml" }
   ];
 
-  const filteredProjects = filter === "all" 
-    ? projects 
+  const filteredProjects = filter === "all"
+    ? projects
     : projects.filter(p => p.category === filter);
 
   // Procedural gradient backgrounds for cards without custom images
@@ -186,7 +185,7 @@ function Projects() {
         <p className="text-muted max-w-2xl mx-auto mt-3">
           Explore my developments categorized into MERN Stack, Java backend utilities, and Python-based machine learning pipelines.
         </p>
-        
+
         {/* Category Filters */}
         <div className="d-flex justify-content-center flex-wrap gap-2 mt-4">
           {categories.map((cat, idx) => (
@@ -216,13 +215,13 @@ function Projects() {
                     className="project-image"
                   />
                 ) : (
-                  <div 
+                  <div
                     className="w-100 h-100 d-flex flex-column align-items-center justify-content-center text-center p-3"
                     style={getCardBg(project)}
                   >
-                    <FontAwesomeIcon 
-                      icon={project.icon} 
-                      size="3x" 
+                    <FontAwesomeIcon
+                      icon={project.icon}
+                      size="3x"
                       className={`mb-3 text-${project.category === "mern" ? "info" : project.category === "java" ? "warning" : "primary"}`}
                       style={{ opacity: 0.8 }}
                     />
@@ -240,14 +239,14 @@ function Projects() {
                   )}
                 </div>
               </div>
-              
+
               <div className="project-body">
                 <h4 className="project-title">
                   <FontAwesomeIcon icon={project.icon} className="me-2 text-white-50" style={{ fontSize: "1.1rem" }} />
                   {project.title}
                 </h4>
                 <p className="project-desc">{project.description}</p>
-                
+
                 <div className="project-tech">
                   {project.tech.map((tag, tagIdx) => (
                     <span key={tagIdx} className="tech-tag">
@@ -257,19 +256,19 @@ function Projects() {
                 </div>
 
                 <div className="project-buttons mt-auto">
-                  <a 
-                    href={project.githubLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="project-btn"
                   >
                     <FontAwesomeIcon icon={faGithub} className="me-2" /> GitHub
                   </a>
                   {project.projectlink ? (
-                    <a 
-                      href={project.projectlink} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                    <a
+                      href={project.projectlink}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="project-btn project-btn-primary"
                     >
                       <FontAwesomeIcon icon={faExternalLinkAlt} className="me-2" /> Launch

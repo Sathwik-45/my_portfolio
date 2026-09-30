@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSchool, faGraduationCap, faLaptopCode, faArrowRight, faDownload, faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import myPhoto from "../assets/images/my-photo.png";
+import myPhotoDesktop from "../assets/images/my-photo-desktop.png";
+import myPhotoMobile from "../assets/images/my-photo-mobile.png";
 
 function About() {
   const roles = [
@@ -10,16 +11,16 @@ function About() {
     "Java Full Stack Developer",
     "Machine Learning Specialist"
   ];
-  
+
   const [roleIndex, setRoleIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  
+
   useEffect(() => {
     let timer;
     const handleTyping = () => {
       const fullText = roles[roleIndex];
-      
+
       if (!isDeleting) {
         // Typing
         setCurrentText(fullText.substring(0, currentText.length + 1));
@@ -36,11 +37,11 @@ function About() {
           setRoleIndex((prev) => (prev + 1) % roles.length);
         }
       }
-      
+
       const speed = isDeleting ? 40 : 80;
       timer = setTimeout(handleTyping, speed);
     };
-    
+
     timer = setTimeout(handleTyping, 100);
     return () => clearTimeout(timer);
   }, [currentText, isDeleting, roleIndex]);
@@ -65,9 +66,9 @@ function About() {
             Creative <span className="typing-text">{currentText}</span>
             <span className="cursor" style={{ animation: "blink 0.75s infinite" }}>|</span>
           </h3>
-          
+
           <p className="lead text-muted mb-4" style={{ fontSize: "1.05rem", lineHeight: "1.7" }}>
-            I am a passionate Full Stack Developer specializing in the MERN Stack(MongoDB, Express, React, Node.js), robust Java Spring Boot backend development, and building hands-on Machine Learning projects. 
+            I am a passionate Full Stack Developer specializing in the MERN Stack(MongoDB, Express, React, Node.js), robust Java Spring Boot backend development, and building hands-on Machine Learning projects.
             I thrive on crafting high-performance, visually immersive web applications that bridge elegant user interfaces with strong database architectures.
           </p>
 
@@ -85,10 +86,16 @@ function About() {
         <Col lg={5} className="order-1 order-lg-2 text-center mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
           <div className="about-photo-wrapper">
             <img
-              src={myPhoto}
+              src={myPhotoDesktop}
               alt="Sathwik Pentakoti Profile"
-              className="img-fluid rounded-circle about-photo"
-              style={{ maxWidth: "320px", height: "auto", border: "5px solid rgba(255,255,255,0.05)" }}
+              className="about-photo d-none d-lg-block mx-auto"
+              style={{ width: "135%", maxWidth: "none", transform: "scale(1.2)" }}
+            />
+            <img
+              src={myPhotoMobile}
+              alt="Sathwik Pentakoti Profile"
+              className="img-fluid about-photo d-lg-none mx-auto"
+              style={{ maxHeight: "550px", width: "auto" }}
             />
           </div>
         </Col>
@@ -100,7 +107,7 @@ function About() {
           <div className="glass-card">
             <h2 className="mb-5 text-gradient d-inline-block">Professional Experience</h2>
             <div className="timeline">
-              
+
               <div className="timeline-item">
                 <div className="timeline-dot" style={{ borderColor: "var(--accent-java)", boxShadow: "0 0 10px var(--accent-java)" }}></div>
                 <div className="timeline-content">
@@ -129,7 +136,7 @@ function About() {
           <div className="glass-card">
             <h2 className="mb-5 text-gradient d-inline-block">Education Journey</h2>
             <div className="timeline">
-              
+
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">

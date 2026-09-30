@@ -37,11 +37,7 @@ function Header({ onNavClick }) {
         href="#"
         onClick={() => handleNavClick("about")}
       >
-        <FontAwesomeIcon
-          icon={faBookOpen}
-          className="gold-icon me-2"
-          style={{ fontSize: "1.2rem" }}
-        />
+
         <span className="first-name">SATHWIK</span>{" "}
         <span className="last-name">PENTAKOTI</span>
       </Navbar.Brand>

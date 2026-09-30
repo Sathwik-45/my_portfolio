@@ -5,25 +5,17 @@ import Projects from "./components/project";
 import Skills from "./components/skills";
 import Certifications from "./components/certifications";
 import Contact from "./components/contact";
-import BookContainer from "./components/BookContainer";
-import SpaceBackground from "./components/SpaceBackground";
+import LoadingScreen from "./components/LoadingScreen";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css";
 
 function App() {
-  // phase: 'landing' | 'portfolio'
-  const [phase, setPhase] = useState("landing");
-  const [portfolioVisible, setPortfolioVisible] = useState(false);
+  const [loadingComplete, setLoadingComplete] = useState(false);
 
-  const handleBookOpened = () => {
-    setPhase("portfolio");
-    // Slight delay so the flash animation finishes first
-    setTimeout(() => setPortfolioVisible(true), 100);
-  };
+
 
   // Scroll reveal setup for portfolio sections
   useEffect(() => {
-    if (phase !== "portfolio") return;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -37,7 +29,7 @@ function App() {
     const sections = document.querySelectorAll(".scroll-reveal");
     sections.forEach((s) => observer.observe(s));
     return () => observer.disconnect();
-  }, [phase, portfolioVisible]);
+  }, []);
 
   const handleNavClick = (id) => {
     const section = document.getElementById(id);
@@ -46,19 +38,11 @@ function App() {
 
   return (
     <>
-      {/* Space background always visible */}
-      <SpaceBackground />
+      <div className="portfolio-scroll-view">
+        <Header onNavClick={handleNavClick} />
 
-      {phase === "landing" && (
-        <BookContainer onBookOpened={handleBookOpened} />
-      )}
-
-      {phase === "portfolio" && (
-        <div className={`portfolio-scroll-view ${portfolioVisible ? "portfolio-enter" : ""}`}>
-          <Header onNavClick={handleNavClick} />
-
-          {/* Scroll progress indicator */}
-          <ScrollProgress />
+        {/* Scroll progress indicator */}
+        <ScrollProgress />
 
           <div style={{ paddingTop: "70px" }}>
             <section id="about" className="scroll-reveal">
@@ -82,6 +66,10 @@ function App() {
             </section>
           </div>
         </div>
+      
+
+      {!loadingComplete && (
+        <LoadingScreen onComplete={() => setLoadingComplete(true)} />
       )}
     </>
   );
