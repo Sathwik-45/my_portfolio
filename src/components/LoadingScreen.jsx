@@ -29,7 +29,9 @@ function LoadingScreen({ onComplete }) {
 
   return (
     <div className={`loading-screen-container ${isFading ? "fade-out" : ""}`}>
-      <div className="loading-number">{count}</div>
+      <div className="loading-number">{count}%</div>
+      <br/>
+      <div className="loading">TRAINED</div>
       <div className="fade-overlay"></div>
     </div>
   );

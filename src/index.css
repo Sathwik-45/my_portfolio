@@ -34,6 +34,7 @@ html {
 /* Loading Screen Styles */
 .loading-screen-container {
   display: flex;
+   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -58,10 +59,16 @@ html {
 }
 
 .loading-number {
-  font-size: 10rem;
+  font-size: 8rem;
   font-family: var(--font-display);
   font-weight: 800;
   animation: numberFadeIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.loading {
+  font-size: 4rem;
+  font-family: var(--font-display);
+  font-weight: 800;
 }
 
 /* Global Text Readability Overrides */
