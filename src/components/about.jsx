@@ -9,7 +9,7 @@ function About() {
   const roles = [
     "MERN Stack Developer",
     "Java Full Stack Developer",
-    "Machine Learning Specialist"
+    "Machine Learning Learner"
   ];
 
   const [roleIndex, setRoleIndex] = useState(0);
